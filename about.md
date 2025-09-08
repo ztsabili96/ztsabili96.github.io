@@ -1,3 +1,9 @@
+---
+layout: page
+title: About Me
+permalink: /about/
+---
+
 # About Zahra Sabili 🌿
 
 I am a graduate of MSc in Plant Biotechnology (Agriculture) from Tarbiat Modares University, Tehran.  

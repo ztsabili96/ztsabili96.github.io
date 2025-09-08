@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Zahra Sabili
+title: About Me
+permalink: /about/
 ---
 
 # Welcome 🌿  

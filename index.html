@@ -4,26 +4,54 @@
     <title>Zahra Sabili – Bioinformatics Researcher</title>
     <meta charset="UTF-8">
   </head>
-  <body>
-    <h1>Hello, I'm Zahra Sabili 🌿</h1>
-    <p>I am a graduate of MSc in Plant Biotechnology (Agriculture) from Tarbiat Modares University, Tehran.  
-My thesis focused on the regulatory relationship between genes and transcription factors during five days post-anthesis in bread wheat, under the supervision of Dr. Tahmineh Lohrasbi and Dr. Sajjad Rashidi Monfared.
+<body>
+  <div class="navbar">
+  <button class="menu-toggle">☰ Menu</button>
+  <ul class="menu">
+    <li><a href="/">خانه</a></li>
+    <li><a href="/about/">درباره من</a></li>
+    <li><a href="https://github.com/ztsabili96">گیت‌هاب</a></li>
+    <li><a href="mailto:ztsabili96@gmail.com">تماس</a></li>
+  </ul>
+</div>
+  <style>
+  .navbar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    position: relative;
+  }
 
-In parallel, I conducted synteny-based identification of EST-SSR markers across ten species of the genus *Oryza*, contributing to comparative genomics and marker development.
+  .menu-toggle {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-Beyond wet-lab research, I’ve cultivated a strong interest in bioinformatics and programming—especially in R and Python. I continuously seek to expand my skills and apply them to real-world biological questions.
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: none;
+  }
 
-Recent bioinformatics projects include:
+  .menu li {
+    margin: 5px 0;
+  }
 
-- RNA-seq data analysis using the WGCNA technique  
-- Machine learning approaches for gene prioritization  
-- Reproducible pipelines for stress-response classification in plants
+  .menu a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+  }
 
-These experiences bring me closer to my long-term goal: improving nutritional outcomes and, ultimately, enhancing human health through plant science.
+  .menu.show {
+    display: block;
+  }
+</style>
 
-📬 Email: ztsabili96@gmail.com  
-🔗 [GitHub](https://github.com/ztsabili96)
-</p>
 </body>
   <nav>
   <ul>
@@ -52,3 +80,32 @@ These experiences bring me closer to my long-term goal: improving nutritional ou
 
 </html>
 
+  <body>
+    <h1>Hello, I'm Zahra Sabili 🌿</h1>
+    <p>I am a graduate of MSc in Plant Biotechnology (Agriculture) from Tarbiat Modares University, Tehran.  
+My thesis focused on the regulatory relationship between genes and transcription factors during five days post-anthesis in bread wheat, under the supervision of Dr. Tahmineh Lohrasbi and Dr. Sajjad Rashidi Monfared.
+
+In parallel, I conducted synteny-based identification of EST-SSR markers across ten species of the genus *Oryza*, contributing to comparative genomics and marker development.
+
+Beyond wet-lab research, I’ve cultivated a strong interest in bioinformatics and programming—especially in R and Python. I continuously seek to expand my skills and apply them to real-world biological questions.
+
+Recent bioinformatics projects include:
+
+- RNA-seq data analysis using the WGCNA technique  
+- Machine learning approaches for gene prioritization  
+- Reproducible pipelines for stress-response classification in plants
+
+These experiences bring me closer to my long-term goal: improving nutritional outcomes and, ultimately, enhancing human health through plant science.
+
+📬 Email: ztsabili96@gmail.com  
+🔗 [GitHub](https://github.com/ztsabili96)
+</p>
+<body>    
+<script>
+  const toggleButton = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  toggleButton.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+</script>

@@ -5,13 +5,10 @@
   <title>Zahra Sabili – Bioinformatics Researcher</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Importing a clean, readable font from Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
-
   <style>
-    /* Global page styling */
+    /* Global styles */
     body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-size: 18px;
       line-height: 1.7;
       padding: 0 40px;
@@ -20,14 +17,7 @@
       color: #333;
     }
 
-    /* Main heading */
-    h1 {
-      font-size: 28px;
-      margin-top: 40px;
-      color: #0077cc;
-    }
-
-    /* Navigation bar styling */
+    /* Navigation bar */
     .navbar {
       background-color: #f0f0f0;
       padding: 20px 40px;
@@ -56,12 +46,35 @@
       color: #005999;
     }
 
-    /* Paragraph styling */
+    /* Headings */
+    h1 {
+      font-size: 28px;
+      margin-top: 40px;
+      color: #0077cc;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 40px;
+      color: #0077cc;
+    }
+
+    /* Paragraphs and lists */
     p {
       margin-bottom: 30px;
     }
 
-    /* Email link styling */
+    ul {
+      padding-left: 20px;
+      margin-bottom: 30px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    /* Email link */
     a.email-link {
       display: inline-block;
       margin-top: 20px;
@@ -81,36 +94,59 @@
   <!-- Navigation menu -->
   <div class="navbar">
     <ul class="menu">
-      <li><a href="/">Home</a></li>
-      <li><a href="/about/">About Me</a></li>
-      <li><a href="about.html">Skills</a></li>
-      <li><a href="about.html">Publications</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#publications">Publications</a></li>
       <li><a href="https://github.com/ztsabili96">GitHub Projects</a></li>
       <li><a href="mailto:ztsabili96@gmail.com">Contact</a></li>
     </ul>
   </div>
 
   <!-- Main content -->
-  <h1>Hello, I'm Zahra Sabili 🌿</h1>
+  <section id="home">
+    <h1>Hello, I'm Zahra Sabili 🌿</h1>
+    <p>
+      I am a graduate of MSc in Plant Biotechnology (Agriculture) from Tarbiat Modares University, Tehran.  
+      My thesis focused on the regulatory relationship between genes and transcription factors during five days post-anthesis in bread wheat, under the supervision of Dr. Tahmineh Lohrasbi and Dr. Sajjad Rashidi Monfared.
 
-  <p>
-    I am a graduate of MSc in Plant Biotechnology (Agriculture) from Tarbiat Modares University, Tehran.  
-    My thesis focused on the regulatory relationship between genes and transcription factors during five days post-anthesis in bread wheat, under the supervision of Dr. Tahmineh Lohrasbi and Dr. Sajjad Rashidi Monfared.
+      In parallel, I conducted synteny-based identification of EST-SSR markers across ten species of the genus <em>Oryza</em>, contributing to comparative genomics and marker development.
 
-    In parallel, I conducted synteny-based identification of EST-SSR markers across ten species of the genus <em>Oryza</em>, contributing to comparative genomics and marker development.
+      Beyond wet-lab research, I’ve cultivated a strong interest in bioinformatics and programming—especially in R and Python. I continuously seek to expand my skills and apply them to real-world biological questions.
 
-    Beyond wet-lab research, I’ve cultivated a strong interest in bioinformatics and programming—especially in R and Python. I continuously seek to expand my skills and apply them to real-world biological questions.
+      Recent bioinformatics projects include:
 
-    Recent bioinformatics projects include:
+      - RNA-seq data analysis using the WGCNA technique  
+      - Machine learning approaches for gene prioritization  
+      - Reproducible pipelines for stress-response classification in plants
 
-    - RNA-seq data analysis using the WGCNA technique  
-    - Machine learning approaches for gene prioritization  
-    - Reproducible pipelines for stress-response classification in plants
+      These experiences bring me closer to my long-term goal: improving nutritional outcomes and, ultimately, enhancing human health through plant science.
+    </p>
+    <a class="email-link" href="mailto:ztsabili96@gmail.com">📬 Email: ztsabili96@gmail.com</a>
+  </section>
 
-    These experiences bring me closer to my long-term goal: improving nutritional outcomes and, ultimately, enhancing human health through plant science.
-  </p>
+  <!-- Skills section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>RNA-seq Analysis: edgeR, WGCNA, DESeq2 (https://github.com/ztsabili96/RiceStress_DESeq2 )</li>
+    <li>Machine Learning: Random Forest (R)- Documented pipeline with reproducible code and visualizations (https://github.com/ztsabili96/Gene-Importance-Analysis-in-Stress-Response-Using-Random-Forest )</li>
+    <li>Data visualization with R</li>
+    <li>Molecular Biology: RNA & DNA Extraction, PCR, qRT-PCR, ELISA, Electrophoresis</li>
+    
+    </ul>
+  </section>
 
-  <a class="email-link" href="mailto:ztsabili96@gmail.com">📬 Email: ztsabili96@gmail.com</a>
+  <!-- Publications section -->
+  <section id="publications">
+    <h2>Publications</h2>
+    <ul>
+      <li>Sabili, Z., Rashidi-Monfard, S., Haghi, R., & Kahrizi, D. (2025). Comparative analysis of simple sequence repeats and synteny across ten Oryza species: Implications for stress response and genetic diversity. Computational Biology and Chemistry, 116. https://doi.org/10.1016/j.compbiolchem.2025.108379</li>
+     <li>**Conference Poster Presentations**</li>
+     <li>Studying the relation between differentially expressed starch genes and bread quality in two wheat cultivars from 5 to 28 days post-anthesis (2022), 1st International and 10th National Iranian Conference on Bioinformatics</li>
+     <li>Investigating the differential expression of starch and transcription factor encoding genes and their relations in wheat cultivars with different bread quality at 5 days post-anthesis (2022), 1st International and 10th National Iranian Conference on Bioinformatics</li>
+    </ul>
+  </section>
 
 </body>
 </html>
